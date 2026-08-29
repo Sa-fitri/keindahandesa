@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -12,8 +12,8 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background: #f5f1e8;
-    color: #26382c;
+    background: #f4f0e5;
+    color: #263d2d;
     line-height: 1.7;
 }
 
@@ -25,37 +25,49 @@ a {
 img {
     width: 100%;
     display: block;
-    object-fit: cover;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     position: absolute;
-    width: 100%;
     top: 0;
-    z-index: 10;
+    left: 0;
+
+    width: 100%;
+
     padding: 25px 7%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 20;
+
     color: white;
 }
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
+
+    font-size: 1.35rem;
+
+    letter-spacing: 1px;
 }
 
 .nav-links {
-    display: flex;
-    gap: 25px;
     list-style: none;
+
+    display: flex;
+
+    gap: 25px;
 }
 
 .nav-links a {
-    font-size: 0.88rem;
+    font-size: .85rem;
+
     transition: .3s;
 }
 
@@ -63,76 +75,121 @@ img {
     opacity: .6;
 }
 
-/* HERO */
+/* =========================
+   LANDING PAGE
+========================= */
 
 .hero {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+
     position: relative;
+
+    display: flex;
+
+    align-items: center;
 
     background:
         linear-gradient(
             90deg,
-            rgba(14, 31, 21, .75),
-            rgba(14, 31, 21, .25)
+            rgba(19, 43, 27, .82),
+            rgba(19, 43, 27, .35),
+            rgba(19, 43, 27, .10)
         ),
-        url("images/hero.jpg") center/cover no-repeat;
+        url("images/hero.jpg")
+        center/cover no-repeat;
 }
 
 .hero-content {
     width: 85%;
+
     max-width: 800px;
+
     margin-left: 7%;
+
     color: white;
+
     position: relative;
+
     z-index: 2;
 }
 
-.eyebrow {
+.small-title {
     text-transform: uppercase;
+
     letter-spacing: 4px;
-    font-size: .75rem;
+
+    font-size: .72rem;
+
     margin-bottom: 20px;
+
+    opacity: .9;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(3.5rem, 9vw, 7rem);
-    line-height: .95;
-    margin-bottom: 25px;
+
+    font-size: clamp(
+        3.5rem,
+        9vw,
+        7rem
+    );
+
+    line-height: .92;
+
+    margin-bottom: 28px;
 }
 
-.hero p {
-    max-width: 600px;
+.hero-description {
+    max-width: 590px;
+
     font-size: 1rem;
-    opacity: .9;
-    margin-bottom: 30px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+    opacity: .92;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
+
     padding: 13px 23px;
-    border-radius: 30px;
-    margin-right: 8px;
+
+    border-radius: 50px;
+
+    font-size: .85rem;
+
     transition: .3s;
 }
 
-.btn-light {
-    background: white;
-    color: #294231;
+.btn-primary {
+    background: #f5f1e6;
+
+    color: #294331;
 }
 
 .btn-outline {
+    border: 1px solid rgba(255,255,255,.8);
+
     color: white;
-    border: 1px solid white;
 }
 
 .btn:hover {
     transform: translateY(-3px);
 }
 
-/* SECTION */
+/* =========================
+   SECTION
+========================= */
 
 .section {
     padding: 100px 7%;
@@ -140,66 +197,102 @@ img {
 
 .container {
     width: 100%;
+
     max-width: 1150px;
+
     margin: auto;
 }
 
-.label {
-    color: #718471;
+.section-label {
     text-transform: uppercase;
+
     letter-spacing: 3px;
+
     font-size: .7rem;
-    font-weight: 700;
+
+    color: #71816f;
+
     margin-bottom: 12px;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    font-size: clamp(
+        2.3rem,
+        5vw,
+        4rem
+    );
+
     line-height: 1.1;
-    margin-bottom: 20px;
+
+    margin-bottom: 22px;
 }
 
-.text {
+.description {
+    max-width: 680px;
+
     color: #66736a;
-    max-width: 650px;
+
+    line-height: 1.9;
 }
 
-/* INTRO */
+/* =========================
+   BERANDA INTRO
+========================= */
 
 .intro {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+
+    gap: 70px;
+
     align-items: center;
 }
 
 .quote {
+    border-left: 2px solid #a8b59e;
+
+    padding-left: 30px;
+
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    border-left: 2px solid #9bac99;
-    padding-left: 25px;
+
+    font-size: 1.7rem;
+
+    color: #536354;
 }
 
-/* CARDS */
+/* =========================
+   CARD
+========================= */
 
-.dark {
-    background: #294231;
+.green-section {
+    background: #294331;
+
     color: white;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 20px;
-    margin-top: 40px;
+
+    margin-top: 45px;
 }
 
 .card {
-    background: #fffdf8;
-    color: #26382c;
+    background: #f9f6ed;
+
+    color: #294331;
+
     padding: 30px;
+
     border-radius: 20px;
+
     transition: .3s;
 }
 
@@ -209,134 +302,194 @@ h2 {
 
 .card-number {
     font-family: 'Playfair Display', serif;
+
     font-size: 2rem;
-    opacity: .35;
+
+    opacity: .3;
 }
 
 .card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin: 15px 0 8px;
+
+    font-size: 1.45rem;
+
+    margin: 12px 0;
 }
 
 .card p {
-    color: #68736b;
+    color: #69756c;
+
     font-size: .9rem;
 }
 
-/* IMAGE + TEXT */
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    min-height: 55vh;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    position: relative;
+
+    color: white;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(17, 38, 25, .78),
+            rgba(17, 38, 25, .12)
+        ),
+        var(--photo)
+        center/cover no-repeat;
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(
+        3rem,
+        7vw,
+        5.5rem
+    );
+
+    line-height: 1;
+}
+
+/* =========================
+   FOTO + TEKS
+========================= */
 
 .feature {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+
+    gap: 65px;
+
     align-items: center;
 }
 
 .feature img {
     height: 500px;
-    border-radius: 5px 70px 5px 5px;
+
+    object-fit: cover;
+
+    border-radius:
+        10px 65px 10px 10px;
 }
 
-.feature-list {
+.list {
     margin-top: 25px;
 }
 
-.feature-list div {
-    border-top: 1px solid #d5d2c8;
-    padding: 15px 0;
+.list-item {
+    border-top: 1px solid #d7d2c6;
+
+    padding: 16px 0;
+
+    color: #68736b;
 }
 
-.feature-list strong {
+.list-item strong {
     display: block;
+
+    color: #294331;
+
+    margin-bottom: 3px;
 }
 
-/* PAGE HERO */
-
-.page-hero {
-    min-height: 55vh;
-    display: flex;
-    align-items: flex-end;
-    padding: 70px 7%;
-    position: relative;
-    color: white;
-
-    background:
-        linear-gradient(
-            0deg,
-            rgba(15, 31, 21, .75),
-            rgba(15, 31, 21, .15)
-        ),
-        var(--background) center/cover no-repeat;
-}
-
-.page-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    line-height: 1;
-}
-
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 15px;
+
+    margin-top: 45px;
 }
 
 .gallery img {
     height: 280px;
-    border-radius: 12px;
-    transition: .3s;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: .35s;
 }
 
 .gallery img:hover {
-    transform: scale(1.02);
+    transform: scale(1.025);
 }
 
-.gallery .large {
+.gallery .wide {
     grid-column: span 2;
 }
 
-.gallery .tall {
-    height: 575px;
-}
-
-/* CTA */
+/* =========================
+   CTA
+========================= */
 
 .cta {
-    background:
-        linear-gradient(
-            rgba(30, 59, 44, .85),
-            rgba(30, 59, 44, .85)
-        ),
-        url("images/sawah-senja.jpg") center/cover;
+    padding: 90px 7%;
+
+    text-align: center;
 
     color: white;
-    text-align: center;
-    padding: 90px 20px;
+
+    background:
+        linear-gradient(
+            rgba(41, 67, 49, .9),
+            rgba(41, 67, 49, .9)
+        ),
+        url("images/sawah.jpg")
+        center/cover no-repeat;
 }
 
 .cta p {
     max-width: 600px;
+
     margin: 0 auto 25px;
-    opacity: .8;
+
+    opacity: .85;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #182c21;
-    color: white;
+    background: #17281e;
+
+    color: #dce3da;
+
     text-align: center;
+
     padding: 30px 20px;
+
     font-size: .8rem;
-    opacity: .95;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
+
+    .navbar {
+        padding: 20px 6%;
+    }
 
     .nav-links {
         display: none;
@@ -347,12 +500,17 @@ footer {
     }
 
     .hero h1 {
-        font-size: 3.6rem;
+        font-size: 3.7rem;
+    }
+
+    .section {
+        padding: 75px 7%;
     }
 
     .intro,
     .feature {
         grid-template-columns: 1fr;
+
         gap: 35px;
     }
 
@@ -360,19 +518,20 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .feature img {
+        height: 380px;
+    }
+
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
 
-    .gallery .large {
+    .gallery .wide {
         grid-column: span 2;
     }
 
-    .gallery .tall {
-        height: 280px;
+    .gallery img {
+        height: 220px;
     }
 
-    .feature img {
-        height: 380px;
-    }
-    }
+}
