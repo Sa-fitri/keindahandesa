@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desa Sepinggan Kecil</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">❧</span>
+        <span>Desa Sepinggan Kecil</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="tentang.html">Tentang Desa</a>
+        <a href="kehidupan.html">Kehidupan</a>
+        <a href="keindahan.html">Keindahan</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Lokasi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="welcome">Selamat Datang di</p>
+
+        <h1>
+            DESA<br>
+            SEPINGGAN KECIL
+        </h1>
+
+        <p class="hero-description">
+            Desa yang asri, rukun warganya, dan kaya akan
+            keindahan alam serta budaya.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="tentang.html" class="btn-primary">
+                ❧ &nbsp; Mengenal Desa
+            </a>
+
+            <a href="galeri.html" class="btn-outline">
+                ▣ &nbsp; Lihat Galeri
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- TENTANG DESA -->
+<section class="about-card">
+
+    <div class="about-text">
+
+        <div class="section-icon">❧</div>
+
+        <h2>Tentang Desa</h2>
+
+        <p>
+            Desa Sepinggan Kecil merupakan salah satu desa yang
+            terletak di Kecamatan Sepinggan. Desa ini memiliki
+            keindahan alam yang memukau, masyarakat yang ramah,
+            serta tradisi yang terus dijaga hingga kini.
+        </p>
+
+        <a href="tentang.html" class="small-btn">
+            Selengkapnya →
+        </a>
+
+    </div>
+
+    <div class="about-image">
+        <img src="1.jpg" alt="Pemandangan Desa">
+    </div>
+
+</section>
+
+
+<!-- KEINDAHAN -->
+<section class="content-section">
+
+    <div class="section-title">
+        <span>❧</span>
+        <h2>Keindahan & Kehidupan Desa</h2>
+    </div>
+
+
+    <div class="cards">
+
+        <div class="info-card">
+            <div class="card-image">
+                <img src="1.jpg" alt="Sawah">
+            </div>
+
+            <div class="card-body">
+                <div class="round-icon">♨</div>
+
+                <div>
+                    <h3>Sawah</h3>
+                    <p>
+                        Hamparan sawah hijau yang menjadi
+                        sumber kehidupan masyarakat desa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="card-image">
+                <img src="2.jpg" alt="Jalan Desa">
+            </div>
+
+            <div class="card-body">
+                <div class="round-icon">▰</div>
+
+                <div>
+                    <h3>Jalan Desa</h3>
+                    <p>
+                        Jalan desa yang menghubungkan
+                        setiap sudut dengan penuh keakraban.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="card-image">
+                <img src="3.jpg" alt="Jembatan">
+            </div>
+
+            <div class="card-body">
+                <div class="round-icon">⌁</div>
+
+                <div>
+                    <h3>Jembatan</h3>
+                    <p>
+                        Jembatan penghubung harapan dan
+                        kebersamaan warga desa.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="card-image">
+                <img src="4.jpg" alt="Pendidikan">
+            </div>
+
+            <div class="card-body">
+                <div class="round-icon">▤</div>
+
+                <div>
+                    <h3>Pendidikan</h3>
+                    <p>
+                        Sekolah sebagai tempat menimba ilmu
+                        demi masa depan yang lebih baik.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <h3>Desa Sepinggan Kecil</h3>
+    <p>
+        Desa yang asri, rukun, dan penuh keindahan.
+    </p>
+
+    <div class="footer-links">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang Desa</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Desa Sepinggan Kecil
+    </p>
+</footer>
+
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
+</body>
+  </html>
