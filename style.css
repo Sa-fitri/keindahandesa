@@ -799,3 +799,100 @@ footer p {
     }
 
   }
+@media (max-width: 900px) {
+
+    .navbar {
+
+        height: 70px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        justify-content: center;
+
+        padding: 8px 0;
+
+    }
+
+
+    .logo {
+
+        justify-content: center;
+
+        font-size: 17px;
+
+        height: 32px;
+
+    }
+
+
+    .logo-icon {
+
+        font-size: 25px;
+
+    }
+
+
+    .nav-menu {
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        display: flex;
+
+        justify-content: flex-start;
+
+        gap: 2px;
+
+        padding: 3px 10px 0;
+
+    }
+
+
+    .nav-menu a {
+
+        font-size: 11px;
+
+        padding: 7px 12px;
+
+    }
+
+
+    .hero {
+
+        min-height: 650px;
+
+        padding-top: 70px;
+
+    }
+
+
+    .page-hero {
+
+        min-height: 500px;
+
+        padding-top: 70px;
+
+    }
+
+
+    .page-hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .page-hero p {
+
+        font-size: 15px;
+
+        padding: 0 20px;
+
+    }
+
+}
