@@ -26,13 +26,18 @@ body {
 /* =========================
    NAVBAR
 ========================= */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
-    height: 74px;
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
+    height: 75px;
+
     z-index: 100;
 
     display: flex;
@@ -41,63 +46,90 @@ body {
 
     padding: 0 5%;
 
-    background: rgba(250, 249, 239, 0.91);
+    background: rgba(250, 249, 239, 0.94);
+
     backdrop-filter: blur(10px);
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
+
 .logo {
-    text-decoration: none;
-    color: var(--dark-green);
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;
-    gap: 12px;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #40552f;
 
     font-family: "Playfair Display", serif;
+
     font-size: 20px;
+
     font-weight: 700;
 }
 
+
 .logo-icon {
-    font-size: 35px;
-    color: var(--green);
+    color: #647b48;
+
+    font-size: 32px;
 }
 
-nav {
+
+.nav-menu {
     display: flex;
+
     align-items: center;
-    gap: 10px;
+
+    gap: 3px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
 }
 
-nav a {
+.nav-menu::-webkit-scrollbar {
+    display: none;
+}
+
+
+.nav-menu a {
+    flex-shrink: 0;
+
     color: #4d5144;
+
     text-decoration: none;
 
-    font-size: 14px;
+    font-size: 13px;
+
     font-weight: 600;
 
-    padding: 12px 20px;
-    border-radius: 30px;
+    padding: 11px 16px;
+
+    border-radius: 25px;
+
+    white-space: nowrap;
 
     transition: 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-    background: var(--green);
+
+.nav-menu a:hover {
+    background: #647b48;
+
     color: white;
 }
 
-.menu-btn {
-    display: none;
 
-    border: none;
-    background: transparent;
+.nav-menu a.active {
+    background: #647b48;
 
-    font-size: 27px;
-    color: var(--dark-green);
-
-    cursor: pointer;
+    color: white;
 }
 
 
